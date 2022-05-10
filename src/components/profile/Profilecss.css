@@ -1,0 +1,51 @@
+.profileImg{
+    width: 30rem;
+    border-radius: 50%;
+    
+}
+.summry{
+    width: 40rem;
+    font-size: 1.5rem;
+    color: white;
+    display: flex;
+    flex-flow: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.profile{
+    
+    background-color: black;
+    padding: 1rem;
+}
+.box{
+    height: 40rem;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    margin-top: 3rem;
+}
+.blue{
+    color:blue;
+}
+.button{
+    text-decoration: none;
+}
+.ashokImg>img{
+    width: 25rem;
+}
+.ashokImg{
+    width: 25rem;
+}
+
+@media only screen and (max-width: 1080px) {
+    .ashokImg>img{
+        width: 15rem;
+    }
+    .summry{
+        
+        font-size: 1rem;
+       
+    }
+
+  }

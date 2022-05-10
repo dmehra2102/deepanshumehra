@@ -1,23 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
+import { useRef } from "react";
+// import "./App.css";
+import Contect from "./components/contect/Contect";
+import Footer from "./components/footer/Footer";
+//import CardImg from './components/navbar/CardImg';
+
+import Navbar from "./components/navbar/Navbar";
+import NavbarResponsive from "./components/navbar/NavbarResponsive";
+import Profile from "./components/profile/Profile";
+import Projects from "./components/project/Projects";
+import Skill from "./components/Skill/Skill";
 
 function App() {
+  const projectRef = useRef()
+  const contectRef = useRef();
+  const skillRef = useRef();
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="">
+      <div>
+         <NavbarResponsive/>
+        <Navbar projectRef={projectRef} skillRef={skillRef} contectRef={contectRef} />
+       
+      
+        <Profile />
+        <div className="border my-5 container shadow-none p-3 mb-5 bg-light rounded">
+          <Skill skillRef={skillRef}/>
+          <Projects projectRef={projectRef} />
+          <Contect contectRef={contectRef}/>
+        </div>
+        <Footer />
+      </div>
+      
+
     </div>
   );
 }
