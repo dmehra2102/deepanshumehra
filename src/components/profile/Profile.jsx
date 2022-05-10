@@ -18,7 +18,7 @@ const Profile = () => {
           <div className="blue">Full-Stack Web Devloper</div>
           <hr className="border border-light" />
           <p>
-          When I first attended the Masai School workshop at that time I was in my class 12 and I didn't know much about coding. But after the workshop, I realized that this domain has much more opportuinity and growth. So I decided to join Masai School and pursue a career in software development.
+          When I first attended the Masai School workshop at that time I was in my class 12 and I didn't know much about coding. But after the workshop, I realized that this domain has much more opportunity and growth. So I decided to join Masai School and pursue a career in software development.
           </p>
           <button className="btn btn-dark border"><a className="text-decoration-none text-light" href="https://drive.google.com/file/d/1TcO4bISHm3_RwyDR6jzV9RrKrGPcxRxW/view?usp=sharing" target="_blank" rel="noopener noreferrer">RESUME</a> </button>
         </div>
